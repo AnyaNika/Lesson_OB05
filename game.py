@@ -6,9 +6,9 @@ pygame.init()
 
 # Константы
 WIDTH, HEIGHT = 800, 600  # Размеры окна
-LIGHT_GRAY = (200, 200, 300)  # Цвет фона
+LIGHT_GRAY = (200, 200, 230)  # Цвет фона
 GREEN = (200, 255, 200)  # Цвет игрока
-DARK_BLUE = (0, 0, 200)  # Цвет блоков
+DARK_BLUE = (200, 0, 200)  # Цвет блоков
 WHITE = (255, 255, 255)  # Цвет текста
 
 # Настройки окна
@@ -103,7 +103,7 @@ def game_over_screen():
     game_over = True
     while game_over:
         screen.fill(LIGHT_GRAY)
-        draw_text("Игра окончена", 70, WHITE, WIDTH // 2, HEIGHT // 3)
+        draw_text("Игра окончена", 70, DARK_BLUE, WIDTH // 2, HEIGHT // 3)
         draw_text("Играть заново", 50, WHITE, WIDTH // 2, HEIGHT // 2)
         draw_text("Выход", 50, WHITE, WIDTH // 2, HEIGHT // 1.5)
         pygame.display.flip()
